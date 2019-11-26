@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DIET</string>
+    <string name="calorie">卡路里：</string>
+    <string name="protein">蛋白质：</string>
+    <string name="fat">脂肪：</string>
+    <string name="carbohydrate">碳水化合物：</string>
+    <string name="sys_advice">系统评价与建议</string>
+    <string name="breakfast">早餐</string>
+    <string name="lunch">午餐</string>
+    <string name="dinner">晚餐</string>
+    <string name="extra_meal">加餐</string>
+    <string name="explore">探索</string>
+    <string name="nutrition_encyclopedia">营养百科</string>
+    <string name="health_mall">健康商城</string>
+    <string name="recipe">优选食谱</string>
+</resources>
