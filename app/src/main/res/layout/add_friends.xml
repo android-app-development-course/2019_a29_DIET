@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:id="@+id/btn_goback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back"
+            />
+        <TextView
+            android:id="@+id/detil_title"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="添加好友"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <SearchView
+        android:id="@+id/search_friend"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/search_frame"
+        android:queryHint="查找用户">
+    </SearchView>
+</LinearLayout>

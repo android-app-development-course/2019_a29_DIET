@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:text="我的"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/btn_message"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/message"
+            />
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/btn_setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/setting"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/my_page_linear"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.example.a84121.bao_diet.RoundImageView
+            android:id="@+id/image_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/star" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/round_green"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/my_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/round_green"
+                android:gravity="bottom"
+                android:paddingLeft="10dp"
+                android:text="派大星"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/guanzhu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/round_green"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="关注 100 粉丝 200 收藏 20"
+                android:textColor="#ffffff"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/my_page2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/round_green"
+            android:drawableRight="@drawable/jump_white"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/me_data"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:text="我的营养数据"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/jump"
+        android:textColor="@drawable/text1"
+        android:paddingLeft="15dp"
+        android:background="@drawable/me_button"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:id="@+id/me_body"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="@drawable/text1"
+        android:drawableRight="@drawable/jump"
+        android:text="我的身体数据"
+        android:gravity="center_vertical"
+        android:textSize="18dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/me_button"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:id="@+id/me_buy"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:drawableRight="@drawable/jump"
+        android:textColor="@drawable/text1"
+        android:text="我的订单"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/me_button"
+        android:paddingLeft="15dp"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:id="@+id/me_collect"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@drawable/text1"
+        android:drawableRight="@drawable/jump"
+        android:text="我的收藏"
+        android:background="@drawable/me_button"
+        android:layout_height="wrap_content">
+    </Button>
+</LinearLayout>

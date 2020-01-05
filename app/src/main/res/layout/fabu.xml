@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <Button
+            android:id="@+id/btn_goback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back"
+            />
+        <TextView
+            android:id="@+id/detil_title"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="发布动态"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:text="发布"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/my_page_linear"
+            />
+    </LinearLayout>
+    <com.example.a84121.bao_diet.PersonalScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/greenback"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <EditText
+            android:id="@+id/fabu_text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="分享你的生活...."
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="top"
+            android:background="@null"
+            />
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="100dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/addpic"
+                android:layout_height="100dp" />
+
+            <LinearLayout
+                android:id="@+id/recLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="bottom">
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.example.a84121.bao_diet.PersonalScrollView>
+</LinearLayout>

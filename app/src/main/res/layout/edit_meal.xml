@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/exit_btn"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:src="@drawable/exit_btn"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"/>
+        <TextView
+            android:id="@+id/meal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="110dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView_meal"
+            android:layout_width="340dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:iconifiedByDefault="false"
+            android:background="@drawable/search_frame"
+            android:queryHint="@string/search">
+
+        </android.support.v7.widget.SearchView>
+        <ImageButton
+            android:id="@+id/check_meal_item"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/check"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/meal_item"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_marginTop="10dp">
+            </ListView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:id="@+id/btn_goback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back"
+            />
+        <TextView
+            android:id="@+id/detil_title"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="设置"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="昵  称"
+            android:textSize="18dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/setting_border"
+            android:hint="派大星"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="头  像"
+            android:textSize="18dp"/>
+        <com.example.a84121.bao_diet.RoundImageView
+            android:id="@+id/head"
+            android:layout_width="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/star"
+            android:layout_height="80dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/recLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+    <Button
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:text="保存设置"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/my_page_linear"/>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DIET</string>
+    <string name="calorie">卡路里：</string>
+    <string name="protein">蛋白质：</string>
+    <string name="fat">脂肪：</string>
+    <string name="carbohydrate">碳水化合物：</string>
+    <string name="sys_advice">系统评价与建议</string>
+    <string name="breakfast">早餐</string>
+    <string name="lunch">午餐</string>
+    <string name="dinner">晚餐</string>
+    <string name="extra_meal">加餐</string>
+    <string name="explore">探索</string>
+    <string name="nutrition_encyclopedia">营养百科</string>
+    <string name="health_mall">健康商城</string>
+    <string name="recipe">优选食谱</string>
+    <string name="search">请输入搜索内容</string>
+    <string name="normal_recipe">普通菜谱</string>
+    <string name="professional_recipe">专业菜谱</string>
+    <string name="personal_recipe">个人定制菜谱</string>
+    <string name="new_product">新品购</string>
+    <string name="high_protein">高蛋白</string>
+    <string name="fresh_product">新鲜购</string>
+    <string name="light_snack">轻零食</string>
+    <string name="scale_weight">人气称</string>
+    <string name="good_drinks">好喝的</string>
+    <string name="low_fat">低脂肪</string>
+    <string name="porridge">代餐粥</string>
+    <string name="hot_product">热销商品</string>
+    <string name="every100">(/100克)</string>
+</resources>

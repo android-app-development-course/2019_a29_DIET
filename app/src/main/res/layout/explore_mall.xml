@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView_mall"
+            android:layout_width="340dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:iconifiedByDefault="false"
+            android:background="@drawable/search_frame"
+            android:queryHint="@string/search">
+
+        </android.support.v7.widget.SearchView>
+
+        <ImageButton
+            android:id="@+id/MyCar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/shopping_car"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.example.a84121.bao_diet.SlideShowView
+                android:id="@+id/slideshowVIew"
+                android:layout_marginTop="15dp"
+                android:layout_width="360sp"
+                android:layout_height="200sp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="380sp"
+                android:layout_height="200sp"
+                android:background="@drawable/frame"
+                android:id="@+id/classify_frame"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/new_product"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/new_product"
+                        android:text="@string/new_product"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/high_protein"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/high_protein"
+                        android:text="@string/high_protein"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/fresh_product"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/fresh"
+                        android:text="@string/fresh_product"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/light_snack"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/light_snack"
+                        android:text="@string/light_snack"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/scale_weight"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/scale_weight"
+                        android:text="@string/scale_weight"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/good_drinks"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/good_drinks"
+                        android:text="@string/good_drinks"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/low_fat"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/low_fat"
+                        android:text="@string/low_fat"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/porridge"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/porridge"
+                        android:text="@string/porridge"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:background="@color/grey1"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hot_product"
+                    android:textSize="17sp"/>
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:background="@color/grey1"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="2000dp"
+                android:id="@+id/recycleView"
+                android:layout_margin="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

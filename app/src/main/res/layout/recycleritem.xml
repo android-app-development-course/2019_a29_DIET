@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="4dp"
+    app:cardBackgroundColor="#ffffffff"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxHeight="300dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/name_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxEms="11"
+            android:maxLines="2"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.example.a84121.bao_diet.RoundImageView
+                android:id="@+id/image_user"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/user_item"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
